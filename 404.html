@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./baze.png" />
+    <link rel="shortcut icon" type="image/png" href="./baze.png" />
+    <link rel="apple-touch-icon" href="./baze.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BazeOffice</title>
+    <script>
+      try {
+        const storedTheme = localStorage.getItem("bazeoffice:theme");
+        const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = storedTheme === "light" || storedTheme === "dark"
+          ? storedTheme
+          : systemDark
+            ? "dark"
+            : "light";
+        document.documentElement.classList.toggle("dark", theme === "dark");
+        document.documentElement.dataset.theme = theme;
+      } catch {
+        document.documentElement.dataset.theme = "light";
+      }
+    </script>
+    <script type="module" crossorigin src="/staging-bazeoffice/assets/index-BFsc2gA7.js"></script>
+    <link rel="modulepreload" crossorigin href="/staging-bazeoffice/assets/framework-BdAjOp9R.js">
+    <link rel="modulepreload" crossorigin href="/staging-bazeoffice/assets/icons-vendor-BardSN-W.js">
+    <link rel="stylesheet" crossorigin href="/staging-bazeoffice/assets/index-ZHzqzPbo.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

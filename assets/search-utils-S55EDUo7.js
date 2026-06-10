@@ -1,0 +1,1 @@
+function t(e){return String(e??"").normalize("NFD").replace(new RegExp("\\p{Diacritic}","gu"),"").toLowerCase().replace(/[^\p{L}\p{N}\s@.+-]/gu," ").replace(/\s+/g," ").trim()}function c(e){return t(e).split(" ").filter(Boolean)}function i(e,n){const r=c(n);if(r.length===0)return!0;const o=t(e.filter(Boolean).join(" "));return r.every(a=>o.includes(a))}export{i as m};
