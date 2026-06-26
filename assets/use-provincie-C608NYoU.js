@@ -1,1 +1,0 @@
-import{r as i}from"./framework-BdAjOp9R.js";import{u as o}from"./use-realtime-board-sync-BwDzJwqs.js";import{a8 as a}from"./anagrafiche-api-K_s4pev-.js";const s=["provincie"];function t(){return o({queryKey:s,queryFn:a,staleTime:300*1e3,gcTime:1800*1e3})}function m(){const{data:e}=t();return i.useMemo(()=>(e??[]).map(r=>({value:r.sigla,label:r.sigla})),[e])}export{m as a,t as u};
