@@ -1,1 +1,0 @@
-import{s as i}from"./main-app-DEn6YWQZ.js";import{n}from"./lookup-values-B9E6dIB1.js";function w(r){return Array.isArray(r)?r:[]}async function f(r,o,a){const s=i.rpc(r,o),{data:t,error:e}=a?await s.select(a):await s;if(e)throw new Error(`${r} failed: ${e.message}`);return n(t)}export{w as a,f as r};
