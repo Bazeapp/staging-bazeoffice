@@ -1,0 +1,1 @@
+import{n as o}from"./lookup-values-yPNHFCSC.js";import{s as i}from"./main-app-DPsSuDYx.js";async function m(r,t){if(r.length===0)return{rows:[],total:0,columns:[],groups:[]};const e=i.rpc("famiglie_by_ids",{p_ids:r}),{data:a,error:s}=await e;if(s)throw new Error(`famiglie_by_ids failed: ${s.message}`);return o(a)}export{m as f};

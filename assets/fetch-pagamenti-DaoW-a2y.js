@@ -1,1 +1,0 @@
-import{q as a}from"./lookup-values-CL-JIXwi.js";async function s(e){return a({table:"pagamenti",select:e.select??["*"],limit:e.limit,offset:e.offset,orderBy:e.orderBy??[{field:"creato_il",ascending:!1}],includeSchema:e.includeSchema,search:e.search,searchFields:e.searchFields,filters:e.filters,groupBy:e.groupBy})}export{s as f};
