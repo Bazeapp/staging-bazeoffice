@@ -1,0 +1,1 @@
+import{s as o}from"./main-app-BYbqTmbg.js";import{n as i}from"./lookup-values-CCG-DsqJ.js";function c(r){return Array.isArray(r)?r:[]}function p(r){return r.length===1?r[0]??null:null}async function f(r,t,a){const e=o.rpc(r,t),{data:s,error:n}=a?await e.select(a):await e;if(n)throw new Error(`${r} failed: ${n.message}`);return i(s)}export{c as a,p as g,f as r};

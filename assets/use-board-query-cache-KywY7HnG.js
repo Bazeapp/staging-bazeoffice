@@ -1,0 +1,1 @@
+import{r as t}from"./framework-BdAjOp9R.js";import{a5 as l}from"./index-Cimr5XKa.js";function C(a,r){const e=l(),s=t.useMemo(()=>r!=null?[r]:a,[r,a]),u=t.useCallback(o=>{e.setQueryData(a,c=>o(c))},[e,a]),n=t.useCallback(()=>e.invalidateQueries({queryKey:s}),[e,s]);return{setBoardData:u,invalidateBoard:n}}export{C as u};
