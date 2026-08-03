@@ -1,1 +1,0 @@
-import{s as t,n as e}from"./main-app-DekrMi9P.js";async function i(a,r){if(a.length===0)return{rows:[],total:0,columns:[],groups:[]};const{data:s,error:o}=await t.rpc("lavoratori_by_ids",{p_ids:a,p_roles:r&&r.length>0?r:null});if(o)throw new Error(`lavoratori_by_ids failed: ${o.message}`);return e(s)}export{i as f};
