@@ -1,0 +1,1 @@
+import{s as o,n as i}from"./main-app-UBDWlqT8.js";function u(r){return Array.isArray(r)?r:[]}function c(r){return r.length===1?r[0]??null:null}async function p(r,s,a){const e=o.rpc(r,s),{data:t,error:n}=a?await e.select(a):await e;if(n)throw new Error(`${r} failed: ${n.message}`);return i(t)}export{u as a,c as g,p as r};
