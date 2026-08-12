@@ -1,1 +1,0 @@
-import{s as e}from"./main-app-UBDWlqT8.js";async function i(s){if(s.length===0)return{};const a=Array.from(new Set(s)),{data:n,error:r}=await e.rpc("assunzioni_names_by_rapporto_ids",{p_ids:a});if(r)throw new Error(`assunzioni_names_by_rapporto_ids failed: ${r.message}`);return n??{}}export{i as f};

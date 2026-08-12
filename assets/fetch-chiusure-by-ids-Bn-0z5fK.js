@@ -1,1 +1,0 @@
-import{s as a,n as o}from"./main-app-UBDWlqT8.js";async function i(r){if(r.length===0)return{rows:[],total:0,columns:[],groups:[]};const{data:e,error:s}=await a.rpc("chiusure_by_ids",{p_ids:r});if(s)throw new Error(`chiusure_by_ids failed: ${s.message}`);return o(e)}export{i as f};
