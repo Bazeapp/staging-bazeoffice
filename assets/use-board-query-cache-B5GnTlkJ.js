@@ -1,1 +1,0 @@
-import{r as t}from"./framework-CaE3VUgy.js";import{u as l}from"./index-BP1w_3v5.js";function C(e,r){const a=l(),s=t.useMemo(()=>r!=null?[r]:e,[r,e]),u=t.useCallback(o=>{a.setQueryData(e,c=>o(c))},[a,e]),n=t.useCallback(()=>a.invalidateQueries({queryKey:s}),[a,s]);return{setBoardData:u,invalidateBoard:n}}export{C as u};

@@ -1,0 +1,1 @@
+import{s as i,n as o}from"./main-app-DayYyos4.js";async function l(s,n){if(s.length===0)return{rows:[],total:0,columns:[],groups:[]};const r=i.rpc("famiglie_by_ids",{p_ids:s}),{data:a,error:e}=await r;if(e)throw new Error(`famiglie_by_ids failed: ${e.message}`);return o(a)}export{l as f};
