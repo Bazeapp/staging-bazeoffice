@@ -1,0 +1,1 @@
+import{s as i,a5 as o}from"./main-app-B49jXmif.js";async function l(s,t){if(s.length===0)return{rows:[],total:0,columns:[],groups:[]};const e=i.rpc("famiglie_by_ids",{p_ids:s}),{data:r,error:a}=await e;if(a)throw new Error(`famiglie_by_ids failed: ${a.message}`);return o(r)}export{l as f};
