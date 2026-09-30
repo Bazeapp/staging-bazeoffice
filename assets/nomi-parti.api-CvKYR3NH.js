@@ -1,1 +1,0 @@
-import{s as e}from"./main-app-B49jXmif.js";import{R as t,a as s,b as n}from"./nomi-parti.adapters-W5tIlivT.js";async function c(o){const r=Array.from(new Set(o.filter(Boolean)));if(r.length===0)return{};const{data:i,error:a}=await e.rpc(t,s(r));if(a)throw new Error(`${t} failed: ${a.message}`);return n(i)}export{c as f};
