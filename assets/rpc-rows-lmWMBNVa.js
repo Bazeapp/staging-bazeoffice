@@ -1,0 +1,1 @@
+import{s as i,a6 as n}from"./main-app-MW7hDD9t.js";function p(r){return Array.isArray(r)?r:[]}async function w(r,o,a){const s=i.rpc(r,o),{data:t,error:e}=a?await s.select(a):await s;if(e)throw new Error(`${r} failed: ${e.message}`);return n(t)}export{p as a,w as r};
