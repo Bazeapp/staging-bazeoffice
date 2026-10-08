@@ -1,0 +1,1 @@
+import{s as i}from"./main-app-D_PqnQLk.js";import{c as t,d as s,e as n}from"./riferimenti-rapporto.adapters-BGGNYZkl.js";async function c(o){const r=Array.from(new Set(o.filter(Boolean)));if(r.length===0)return{};const{data:e,error:a}=await i.rpc(t,s(r));if(a)throw new Error(`${t} failed: ${a.message}`);return n(e)}export{c as f};
