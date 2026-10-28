@@ -1,1 +1,0 @@
-import{s as t,aa as e}from"./main-app-CvaR1uU9.js";async function i(r,a){if(r.length===0)return{rows:[],total:0,columns:[],groups:[]};const{data:s,error:o}=await t.rpc("lavoratori_by_ids",{p_ids:r,p_roles:a&&a.length>0?a:null});if(o)throw new Error(`lavoratori_by_ids failed: ${o.message}`);return e(s)}export{i as f};
