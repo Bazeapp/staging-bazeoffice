@@ -1,0 +1,1 @@
+import{s as n,aa as s}from"./main-app-CjDpGxHN.js";async function l(a,i,t){if(i.length===0)return{rows:[],total:0,columns:[],groups:[]};const{data:e,error:r}=await n.rpc("indirizzi_by_entity",{p_entita_tabella:a,p_entita_ids:i,p_tipi:t&&t.length>0?t:null});if(r)throw new Error(`indirizzi_by_entity failed: ${r.message}`);return s(e)}export{l as f};
