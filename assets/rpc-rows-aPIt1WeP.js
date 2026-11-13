@@ -1,0 +1,1 @@
+import{c as i,ak as n}from"./main-app-CaQOeNH5.js";function p(r){return Array.isArray(r)?r:[]}async function w(r,o,a){const e=i.rpc(r,o),{data:t,error:s}=a?await e.select(a):await e;if(s)throw new Error(`${r} failed: ${s.message}`);return n(t)}export{p as a,w as r};
