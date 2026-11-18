@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BazeOffice</title>
     <script>
+      // Applies the theme before React mounts (no flash of the wrong theme).
+      // Same resolution as src/components/theme/theme-provider.tsx: keep in step.
       try {
         const storedTheme = localStorage.getItem("bazeoffice:theme");
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -22,10 +24,10 @@
         document.documentElement.dataset.theme = "light";
       }
     </script>
-    <script type="module" crossorigin src="/staging-bazeoffice/assets/index-D5GTxVhy.js"></script>
+    <script type="module" crossorigin src="/staging-bazeoffice/assets/index-CmWcv9i5.js"></script>
     <link rel="modulepreload" crossorigin href="/staging-bazeoffice/assets/framework-CfmTpi9f.js">
     <link rel="modulepreload" crossorigin href="/staging-bazeoffice/assets/icons-vendor-sBPn936R.js">
-    <link rel="stylesheet" crossorigin href="/staging-bazeoffice/assets/index-D7AVoTqr.css">
+    <link rel="stylesheet" crossorigin href="/staging-bazeoffice/assets/index-CU3yVNOd.css">
   </head>
   <body>
     <div id="root"></div>
