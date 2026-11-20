@@ -1,0 +1,1 @@
+import{c as a,ai as o}from"./main-app-l16IQETv.js";async function l(e,t,i){if(t.length===0)return{rows:[],total:0,columns:[],groups:[]};const{data:n,error:r}=await a.rpc("indirizzi_by_entity",{p_entita_tabella:e,p_entita_ids:t,p_tipi:i&&i.length>0?i:null});if(r)throw new Error(`indirizzi_by_entity failed: ${r.message}`);return o(n)}export{l as f};
