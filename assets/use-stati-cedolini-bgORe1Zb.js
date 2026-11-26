@@ -1,1 +1,0 @@
-import{b as r}from"./main-app-BEqSsu43.js";import{f as t}from"./selezioni-inviate.adapters-CtWBJgHd.js";import{aJ as e}from"./pagamenti.adapters-CqThIRcy.js";const a=["payroll","stati-cedolini"],s=e([]);function l(o){return r({queryKey:a,queryFn:async()=>e((await t()).rows),enabled:o,retry:!1}).data??s}export{l as u};

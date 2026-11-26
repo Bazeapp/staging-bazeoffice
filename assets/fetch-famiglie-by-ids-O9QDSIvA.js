@@ -1,1 +1,0 @@
-import{c as i,ai as o}from"./main-app-BEqSsu43.js";async function l(a,t){if(a.length===0)return{rows:[],total:0,columns:[],groups:[]};const r=i.rpc("famiglie_by_ids",{p_ids:a}),{data:s,error:e}=await r;if(e)throw new Error(`famiglie_by_ids failed: ${e.message}`);return o(s)}export{l as f};
