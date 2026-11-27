@@ -1,1 +1,0 @@
-import{c as s,ai as e}from"./main-app-CptUda_q.js";async function n(a,r){if(a.length===0)return{rows:[],total:0,columns:[],groups:[]};const{data:t,error:o}=await s.rpc("lavoratori_by_ids",{p_ids:a,p_roles:r&&r.length>0?r:null});if(o)throw new Error(`lavoratori_by_ids failed: ${o.message}`);return e(t)}export{n as f};
